@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#131720">
+<title>殴易-提供安全高效的数字资产交易服务</title>
+<meta name="keywords" content="殴易,殴易下载安装,殴易正版下载">
+<meta name="description" content="殴易交易所官网提供专业行情图表、实时深度数据与多维度分析工具，帮助投资者更全面地了解市场，做出更明智的交易决策。">
+<meta property="og:title" content="殴易-提供安全高效的数字资产交易服务">
+<meta property="og:description" content="殴易提供专业行情图表、深度数据与多维度分析工具的使用说明，本页为第三方信息展示与下载导航页，含正版核验要点与风险提示。">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<style>
+  :root{
+    --bg-0:#131720;
+    --bg-1:#1a1f2b;
+    --bg-2:#212734;
+    --bg-3:#2a3140;
+    --rose:#e9a9a2;
+    --rose-2:#f6c9c3;
+    --rose-deep:#c4837c;
+    --cold:#f7f9fc;
+    --ink:#e8edf5;
+    --ink-2:#bcc6d4;
+    --muted:#8895a6;
+    --line-r:rgba(233,169,162,.26);
+    --line-c:rgba(247,249,252,.11);
+    --r:18px;
+    --maxw:1180px;
+    --shadow:0 28px 56px -32px rgba(0,0,0,.96);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:var(--bg-0);color:var(--ink);font-size:16px;line-height:1.78;
+    overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:-2;
+    background:
+      radial-gradient(880px 540px at 4% -8%,rgba(233,169,162,.16),transparent 62%),
+      radial-gradient(760px 500px at 98% 0%,rgba(120,150,200,.14),transparent 64%),
+      radial-gradient(940px 660px at 50% 108%,rgba(233,169,162,.06),transparent 66%),
+      linear-gradient(168deg,#131720 0%,#1a1f2b 46%,#222836 76%,#131720 100%);
+  }
+  body::after{
+    content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:linear-gradient(rgba(233,169,162,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(247,249,252,.03) 1px,transparent 1px);
+    background-size:56px 56px;
+    -webkit-mask-image:radial-gradient(circle at 50% 0%,#000 0%,transparent 74%);
+    mask-image:radial-gradient(circle at 50% 0%,#000 0%,transparent 74%);
+  }
+  a{color:inherit;text-decoration:none}
+  svg{display:block;max-width:100%}
+  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+  .site-header{
+    position:sticky;top:0;z-index:60;
+    background:rgba(19,23,32,.9);
+    border-bottom:1px solid var(--line-r);
+    -webkit-backdrop-filter:blur(14px);
+    backdrop-filter:blur(14px);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:14px;height:64px}
+  .brand{display:flex;align-items:center;gap:11px;font-weight:750;font-size:16.6px;letter-spacing:.4px}
+  .logo{
+    width:37px;height:37px;border-radius:12px;flex:none;display:grid;place-items:center;
+    background:linear-gradient(140deg,#fff1ee,#e9a9a2 55%,#c4837c);
+    box-shadow:0 12px 26px -13px rgba(233,169,162,.8);
+  }
+  .logo svg{width:19px;height:19px}
+  .brand small{display:block;font-size:9.9px;font-weight:500;letter-spacing:2px;color:var(--muted)}
+  .nav-links{display:none;gap:14px;font-size:13.5px;color:var(--ink-2)}
+  .nav-links a{position:relative;padding:4px 0;transition:color .2s;white-space:nowrap}
+  .nav-links a:hover,.nav-links a:focus-visible{color:var(--rose-2)}
+  .nav-links a::after{
+    content:"";position:absolute;left:0;bottom:-3px;height:2px;width:0;border-radius:2px;
+    background:linear-gradient(90deg,var(--rose),#9db4d8);transition:width .25s ease;
+  }
+  .nav-links a:hover::after{width:100%}
+  .nav-cta{
+    display:inline-flex;align-items:center;gap:7px;padding:9px 16px;border-radius:11px;
+    font-size:13.6px;font-weight:750;color:#2a1a18;white-space:nowrap;
+    background:linear-gradient(135deg,#fff1ee,#e9a9a2 58%,#dfa19a);
+    box-shadow:0 13px 28px -14px rgba(233,169,162,.85);
+    transition:transform .18s ease;
+  }
+  .nav-cta:hover{transform:translateY(-2px)}
+  .nav-cta svg{width:15px;height:15px}
+  @media(min-width:1080px){.nav-links{display:flex}.nav{height:70px}}
+
+  .hero{padding:44px 0 40px}
+  .hero-grid{display:grid;gap:30px}
+  @media(min-width:1000px){.hero-grid{grid-template-columns:1.03fr .97fr;gap:36px;align-items:center}.hero{padding:58px 0 50px}}
+  .pill{
+    display:inline-flex;align-items:center;gap:9px;padding:7px 15px;border-radius:999px;
+    font-size:12px;letter-spacing:.7px;color:var(--rose-2);
+    background:rgba(233,169,162,.1);border:1px solid var(--line-r);
+  }
+  .pill i{width:6px;height:6px;border-radius:50%;background:var(--rose);box-shadow:0 0 10px var(--rose);animation:pulse 2.7s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+  h1{margin:19px 0 0;font-size:clamp(26px,6vw,48px);line-height:1.26;font-weight:850;letter-spacing:-1px}
+  h1 em{
+    font-style:normal;
+    background:linear-gradient(100deg,#f7f9fc 0%,#f6d6d1 32%,#e9a9a2 66%,#a9bede 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  h1 span.dim{color:var(--ink);opacity:.95}
+  .lead{margin:17px 0 0;max-width:630px;color:var(--ink-2);font-size:clamp(14px,1.6vw,15.6px)}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    padding:14px 23px;border-radius:13px;font-size:14.9px;font-weight:700;
+    transition:transform .18s ease,box-shadow .18s ease,background .2s,border-color .2s;
+  }
+  .btn svg{width:19px;height:19px;flex:none}
+  .btn-primary{
+    background:linear-gradient(135deg,#fff1ee,#e9a9a2 58%,#dfa19a);
+    color:#2a1a18;box-shadow:0 18px 38px -18px rgba(233,169,162,.85);
+  }
+  .btn-primary:hover,.btn-primary:focus-visible{transform:translateY(-2px)}
+  .btn-ghost{background:rgba(255,255,255,.04);border:1px solid var(--line-c);color:var(--cold)}
+  .btn-ghost:hover,.btn-ghost:focus-visible{transform:translateY(-2px);background:rgba(233,169,162,.1);border-color:rgba(233,169,162,.5)}
+  .hero-notes{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:21px;font-size:12.4px;color:var(--muted)}
+  .hero-notes span{display:inline-flex;align-items:center;gap:7px}
+  .hero-notes span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--rose);opacity:.9}
+
+  .panel{
+    position:relative;border-radius:22px;padding:20px;
+    background:linear-gradient(160deg,rgba(42,49,64,.9),rgba(19,23,32,.94));
+    border:1px solid var(--line-r);
+    box-shadow:0 32px 62px -32px rgba(0,0,0,.98),inset 0 1px 0 rgba(255,255,255,.05);
+    -webkit-backdrop-filter:blur(16px) saturate(1.2);
+    backdrop-filter:blur(16px) saturate(1.2);
+    overflow:hidden;
+  }
+  @supports not ((backdrop-filter:blur(2px)) or (-webkit-backdrop-filter:blur(2px))){
+    .panel{background:linear-gradient(160deg,rgba(38,45,59,.98),rgba(19,23,32,.99))}
+  }
+  .panel::before{
+    content:"";position:absolute;right:-76px;top:-84px;width:200px;height:200px;border-radius:50%;
+    background:radial-gradient(circle,rgba(233,169,162,.16),transparent 66%);pointer-events:none;
+  }
+  .panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;position:relative}
+  .panel-head strong{font-size:15px;font-weight:750;color:#fff;letter-spacing:.3px}
+  .badge-demo{
+    font-size:11px;letter-spacing:.6px;padding:4px 9px;border-radius:7px;white-space:nowrap;
+    color:#ffe9e5;background:rgba(233,169,162,.15);border:1px solid var(--line-r);
+  }
+  .panel-caption{margin-top:6px;font-size:11.4px;color:var(--muted);position:relative}
+
+  .seg{position:relative;margin-top:12px;display:flex;gap:7px;flex-wrap:wrap}
+  .seg span{
+    font-size:11.2px;padding:4px 10px;border-radius:7px;color:var(--ink-2);
+    border:1px solid var(--line-c);background:rgba(255,255,255,.035);
+  }
+  .seg span.on{color:#2a1a18;background:linear-gradient(135deg,#fff1ee,#e9a9a2);border-color:transparent;font-weight:700}
+
+  .candle-wrap{margin-top:10px;position:relative}
+  .candle-wrap svg{width:100%;height:auto}
+  .pulse-dot{animation:beat 2.2s ease-in-out infinite}
+  @keyframes beat{0%,100%{opacity:.35;r:3}50%{opacity:1;r:5.2}}
+
+  .depth-title{
+    margin-top:13px;padding-top:12px;border-top:1px solid rgba(233,169,162,.18);
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    font-size:11.6px;color:var(--muted);position:relative;
+  }
+  .depth{position:relative;margin-top:9px;display:grid;gap:5px}
+  .drow{
+    display:grid;grid-template-columns:38px 1fr;align-items:center;gap:8px;
+    font-size:10.8px;color:var(--muted);font-variant-numeric:tabular-nums;
+  }
+  .drow .db{height:8px;border-radius:4px;overflow:hidden;background:rgba(255,255,255,.05)}
+  .drow .db span{display:block;height:100%;border-radius:4px}
+  .drow.ask .db span{background:linear-gradient(90deg,rgba(233,169,162,.28),rgba(233,169,162,.62))}
+  .drow.bid .db span{background:linear-gradient(90deg,rgba(157,180,216,.26),rgba(157,180,216,.6))}
+  .drow.ask{color:#f6c9c3}
+  .drow.bid{color:#b9cbe6}
+
+  .ring-row{
+    position:relative;margin-top:13px;padding-top:12px;border-top:1px solid rgba(233,169,162,.18);
+    display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;
+  }
+  .ring-row svg{width:56px;height:56px;flex:none}
+  .ring-legend{display:grid;gap:4px;font-size:10.8px;color:var(--muted)}
+  .ring-legend span{display:flex;align-items:center;gap:7px}
+  .ring-legend i{width:7px;height:7px;border-radius:2px;flex:none;display:inline-block}
+  .panel-foot{
+    margin-top:12px;padding-top:11px;border-top:1px solid rgba(233,169,162,.18);
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;position:relative;
+  }
+  .panel-foot div{text-align:center}
+  .panel-foot b{display:block;font-size:12.1px;font-weight:700;color:var(--rose-2)}
+  .panel-foot em{display:block;font-style:normal;font-size:10.4px;color:var(--muted);margin-top:1px}
+
+  section{padding:46px 0}
+  .sec-head{max-width:900px;margin:0 auto 30px;text-align:center}
+  .tag{display:inline-block;font-size:11.4px;font-weight:800;letter-spacing:2.4px;text-transform:uppercase;color:var(--rose);margin-bottom:11px}
+  h2{font-size:clamp(20px,4.2vw,29px);line-height:1.34;font-weight:800;letter-spacing:-.2px}
+  .sec-head p{margin-top:12px;color:var(--ink-2);font-size:14.8px}
+  h3{font-size:17px;font-weight:700;line-height:1.5}
+
+  .grid{display:grid;gap:16px}
+  @media(min-width:720px){.g2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(min-width:960px){.g3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+  .card{
+    background:linear-gradient(160deg,rgba(42,49,64,.94),rgba(19,23,32,.95));
+    border:1px solid var(--line-r);border-radius:var(--r);box-shadow:var(--shadow);padding:24px;
+  }
+  .ic{
+    width:45px;height:45px;border-radius:13px;display:grid;place-items:center;margin-bottom:14px;
+    background:linear-gradient(145deg,rgba(233,169,162,.2),rgba(157,180,216,.16));
+    border:1px solid var(--line-r);color:var(--rose-2);
+  }
+  .ic svg{width:22px;height:22px}
+  .card h3{color:#fff}
+  .card p{margin-top:8px;color:var(--ink-2);font-size:clamp(13.4px,1.5vw,14.1px)}
+
+  .note-line{
+    margin-top:16px;padding:16px 18px;border-radius:14px;
+    border:1px dashed rgba(233,169,162,.42);background:rgba(233,169,162,.06);
+    font-size:13.4px;color:#f3f6fb;
+  }
+  .note-line b{color:var(--rose-2)}
+
+  .chart-grid{display:grid;gap:14px}
+  @media(min-width:860px){.chart-grid{grid-template-columns:1.08fr .92fr;align-items:start}}
+  .chart-screen{
+    padding:18px;border-radius:18px;border:1px solid var(--line-r);
+    background:linear-gradient(150deg,rgba(42,49,64,.92),rgba(19,23,32,.95));
+  }
+  .chart-screen svg{width:100%;height:auto}
+  .kv-list{display:grid;gap:9px}
+  .kv{
+    display:flex;gap:11px;align-items:flex-start;padding:14px;border-radius:13px;
+    background:rgba(33,39,52,.86);border:1px solid var(--line-c);
+  }
+  .kv .k{
+    width:30px;height:30px;border-radius:9px;flex:none;display:grid;place-items:center;
+    font-size:11.6px;font-weight:800;color:#2a1a18;
+    background:linear-gradient(140deg,#fff1ee,#e9a9a2);
+  }
+  .kv h3{font-size:14.4px}
+  .kv p{color:var(--muted);font-size:13.1px;margin-top:2px}
+
+  .depth-grid{display:grid;gap:14px}
+  @media(min-width:900px){.depth-grid{grid-template-columns:1fr 1fr;align-items:start}}
+  .book{
+    padding:18px;border-radius:16px;border:1px solid var(--line-r);
+    background:rgba(33,39,52,.86);
+  }
+  .book-head{
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    font-size:12.4px;color:var(--muted);padding-bottom:10px;border-bottom:1px solid var(--line-c);
+  }
+  .book-head b{color:#fff;font-size:13.4px;font-weight:700}
+  .book-row{
+    display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;align-items:center;
+    font-size:11.4px;padding:5px 0;font-variant-numeric:tabular-nums;position:relative;
+  }
+  .book-row .bg{position:absolute;right:0;top:2px;bottom:2px;border-radius:4px;opacity:.16}
+  .book-row span{position:relative;text-align:right}
+  .book-row span:first-child{text-align:left}
+  .ask-row .bg{background:#e9a9a2}
+  .bid-row .bg{background:#9db4d8}
+  .ask-row span:first-child{color:#f6c9c3}
+  .bid-row span:first-child{color:#b9cbe6}
+  .book-mid{
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    margin:8px 0;padding:7px;border-radius:8px;font-size:12.2px;color:var(--rose-2);
+    border:1px dashed rgba(233,169,162,.4);background:rgba(233,169,162,.07);
+  }
+
+  .tools{display:grid;gap:14px}
+  @media(min-width:840px){.tools{grid-template-columns:repeat(3,minmax(0,1fr))}}
+  .tool{
+    padding:22px 19px;border-radius:16px;border:1px solid var(--line-r);
+    background:rgba(33,39,52,.86);box-shadow:var(--shadow);
+  }
+  .tool h3{display:flex;align-items:center;gap:9px;color:#fff;font-size:15.6px}
+  .tool h3 svg{width:18px;height:18px;color:var(--rose-2);flex:none}
+  .tool p{margin-top:8px;font-size:13.4px;color:var(--ink-2)}
+  .tool .mini{margin-top:12px}
+  .tool .mini svg{width:100%;height:auto}
+
+  .market{
+    display:grid;gap:14px;padding:22px;border-radius:20px;
+    border:1px solid var(--line-r);background:linear-gradient(150deg,rgba(42,49,64,.9),rgba(19,23,32,.94));
+  }
+  @media(min-width:900px){.market{grid-template-columns:1.15fr .85fr;align-items:center}}
+  .market-chart svg{width:100%;height:auto}
+  .market-side{display:grid;gap:9px}
+  .mcell{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding:11px 13px;border-radius:11px;background:rgba(255,255,255,.035);
+    border:1px solid rgba(247,249,252,.09);font-size:12.8px;color:var(--ink-2);
+  }
+  .mcell b{color:var(--cold);font-weight:650}
+  .mcell span{color:var(--muted);font-size:11.8px}
+  .demo-note{margin-top:12px;font-size:11.6px;color:var(--muted);display:flex;align-items:center;gap:7px}
+  .demo-note::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--rose)}
+
+  .dl-grid{display:grid;gap:16px}
+  @media(min-width:760px){.dl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  .dl-card{
+    position:relative;overflow:hidden;padding:26px;border-radius:20px;
+    background:linear-gradient(155deg,rgba(42,49,64,.96),rgba(19,23,32,.97));
+    border:1px solid var(--line-r);box-shadow:var(--shadow);
+  }
+  .dl-card::after{
+    content:"";position:absolute;right:-68px;top:-76px;width:182px;height:182px;border-radius:50%;
+    background:radial-gradient(circle,rgba(157,180,216,.14),transparent 66%);pointer-events:none;
+  }
+  .dl-top{display:flex;align-items:center;gap:13px}
+  .dl-logo{
+    width:48px;height:48px;border-radius:14px;flex:none;display:grid;place-items:center;
+    background:rgba(255,255,255,.05);border:1px solid var(--line-r);color:var(--rose-2);
+  }
+  .dl-logo svg{width:24px;height:24px}
+  .dl-sub{color:var(--muted);font-size:12.5px;margin-top:2px}
+  .dl-card ul{list-style:none;margin:16px 0 20px;display:grid;gap:10px}
+  .dl-card li{display:flex;gap:10px;align-items:flex-start;color:var(--ink-2);font-size:13.8px}
+  .dl-card li svg{width:15px;height:15px;flex:none;margin-top:4px;color:var(--rose)}
+  .dl-btn{
+    display:flex;align-items:center;justify-content:center;gap:9px;width:100%;
+    padding:14px;border-radius:13px;font-weight:700;font-size:14.9px;
+    background:linear-gradient(135deg,rgba(233,169,162,.2),rgba(157,180,216,.15));
+    border:1px solid var(--line-r);color:#fff4f2;
+    transition:transform .18s,border-color .2s,background .2s;
+  }
+  .dl-btn:hover,.dl-btn:focus-visible{transform:translateY(-2px);border-color:rgba(233,169,162,.7);background:linear-gradient(135deg,rgba(233,169,162,.32),rgba(157,180,216,.22))}
+  .dl-btn svg{width:18px;height:18px;color:var(--rose-2)}
+  .fake-box{
+    margin-top:18px;padding:20px;border-radius:16px;
+    border:1px dashed rgba(233,169,162,.44);background:rgba(233,169,162,.06);
+  }
+  .fake-box b{display:flex;align-items:center;gap:9px;font-size:14.4px;color:var(--rose-2)}
+  .fake-box b svg{width:17px;height:17px;flex:none}
+  .fake-box ul{list-style:none;margin-top:12px;display:grid;gap:8px}
+  .fake-box li{display:flex;gap:9px;font-size:13.4px;color:#f3f6fb}
+  .fake-box li::before{content:"";width:5px;height:5px;border-radius:50%;background:#9db4d8;flex:none;margin-top:9px}
+
+  .sec-stack{display:grid;gap:12px}
+  @media(min-width:760px){.sec-stack{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  .srow{display:flex;gap:12px;align-items:flex-start;padding:18px;border-radius:14px;background:rgba(33,39,52,.82);border:1px solid var(--line-c)}
+  .srow .ico{
+    width:34px;height:34px;border-radius:10px;flex:none;display:grid;place-items:center;
+    background:rgba(233,169,162,.12);border:1px solid var(--line-r);color:var(--rose-2);
+  }
+  .srow .ico svg{width:17px;height:17px}
+  .srow h3{font-size:14.6px}
+  .srow p{color:var(--muted);font-size:13.2px;margin-top:3px}
+
+  .steps{display:grid;gap:14px}
+  @media(min-width:820px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+  .step{padding:22px 19px;border-radius:16px;background:rgba(33,39,52,.82);border:1px solid var(--line-r)}
+  .step .num{
+    display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;
+    border-radius:9px;margin-bottom:11px;font-size:12.6px;font-weight:800;color:#2a1a18;
+    background:linear-gradient(135deg,#fff1ee,#e9a9a2);
+  }
+  .step h3{font-size:15.6px}
+  .step p{margin-top:6px;color:var(--ink-2);font-size:13.6px}
+
+  .compliance{
+    padding:26px;border-radius:var(--r);
+    border:1px solid var(--line-r);background:linear-gradient(150deg,rgba(233,169,162,.08),rgba(33,39,52,.9));
+  }
+  .compliance h2{display:flex;align-items:center;gap:11px;font-size:19px}
+  .compliance h2 svg{width:22px;height:22px;color:var(--rose-2);flex:none}
+  .compliance ul{list-style:none;margin-top:16px;display:grid;gap:11px}
+  .compliance li{display:flex;gap:10px;font-size:clamp(13.2px,1.5vw,13.9px);color:#f3f6fb}
+  .compliance li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--rose);flex:none;margin-top:9px}
+  .statement{
+    margin-top:18px;padding:20px;border-radius:14px;
+    border:1px dashed rgba(233,169,162,.46);background:rgba(233,169,162,.06);
+  }
+  .statement b{display:flex;align-items:center;gap:9px;font-size:14.6px;color:var(--rose-2)}
+  .statement b svg{width:17px;height:17px;flex:none}
+  .statement p{margin-top:9px;font-size:13.6px;color:#f3f6fb}
+
+  .faq{max-width:910px;margin:0 auto;display:grid;gap:12px}
+  details{background:rgba(33,39,52,.86);border:1px solid var(--line-r);border-radius:15px;padding:0 20px;transition:border-color .2s,background .2s}
+  details[open]{border-color:rgba(233,169,162,.44);background:rgba(42,49,64,.96)}
+  summary{
+    list-style:none;cursor:pointer;padding:18px 32px 18px 0;position:relative;
+    font-weight:650;font-size:15px;line-height:1.6;color:#fff;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary::after{
+    content:"";position:absolute;right:3px;top:50%;width:9px;height:9px;
+    border-right:2px solid var(--rose-2);border-bottom:2px solid var(--rose-2);
+    transform:translateY(-70%) rotate(45deg);transition:transform .25s;
+  }
+  details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+  details p{padding:0 0 18px;color:var(--ink-2);font-size:14px}
+
+  .risk-block{
+    padding:26px;border-radius:var(--r);border:1px solid var(--line-r);
+    background:linear-gradient(150deg,rgba(157,180,216,.12),rgba(33,39,52,.9));
+  }
+  .risk-block h2{display:flex;align-items:center;gap:11px;font-size:19px}
+  .risk-block h2 svg{width:22px;height:22px;color:#b9cbe6;flex:none}
+  .risk-block ul{list-style:none;margin-top:16px;display:grid;gap:11px}
+  .risk-block li{display:flex;gap:10px;font-size:13.9px;color:#f3f6fb}
+  .risk-block li::before{content:"";width:6px;height:6px;border-radius:50%;background:#9db4d8;flex:none;margin-top:9px}
+
+  footer{
+    margin-top:42px;padding:38px 0 28px;border-top:1px solid var(--line-r);
+    background:linear-gradient(180deg,rgba(19,23,32,0),rgba(9,11,16,.96));
+  }
+  .foot-grid{display:grid;gap:26px}
+  @media(min-width:840px){.foot-grid{grid-template-columns:1.5fr 1fr 1fr}}
+  .foot-brand p{margin-top:12px;color:var(--muted);font-size:13.1px;max-width:450px}
+  .foot-col h4{font-size:14px;font-weight:700;margin-bottom:11px;letter-spacing:.4px;color:#fff}
+  .foot-col a{display:block;color:var(--muted);font-size:13.3px;padding:5px 0;transition:color .2s}
+  .foot-col a:hover{color:var(--rose-2)}
+  .foot-risk{
+    margin-top:28px;padding:18px 20px;border-radius:14px;font-size:12.7px;color:#f3f6fb;
+    border:1px solid var(--line-r);background:rgba(233,169,162,.06);
+  }
+  .foot-risk strong{color:var(--rose-2)}
+  .copyright{
+    margin-top:22px;padding-top:18px;border-top:1px solid rgba(233,169,162,.14);
+    display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between;color:var(--muted);font-size:12.1px;
+  }
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.22,.8,.3,1),transform .7s cubic-bezier(.22,.8,.3,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    .pill i,.pulse-dot{animation:none}
+    html{scroll-behavior:auto}
+  }
+  :focus-visible{outline:2px solid var(--rose);outline-offset:3px;border-radius:7px}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https:\/\/schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "殴易-提供安全高效的数字资产交易服务",
+      "alternateName": "殴易",
+      "description": "殴易提供专业行情图表、深度数据与多维度分析工具，本页为第三方信息展示与下载导航页，说明图表用法、深度读法、分析工具口径、正版下载核验与账户安全要点。",
+      "inLanguage": "zh-CN"
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "zh-CN",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "殴易与欧易、OKX、网易是同一家吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不是。殴易系本页面所述产品名称，与欧易、OKX、网易及其各自的关联主体之间不存在隶属、代理、授权、商标许可或合作关系，也不代表同一运营主体。名称相近仅因字形或读音近似，请勿混同。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "本页面是殴易官方网站吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不是。本页面为第三方信息展示与下载导航页，不提供安装包文件，也不代理注册开户。下载与注册请以官方渠道公示信息为准，页面内容仅用于说明功能结构与操作流程。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "页面中的 K 线、订单簿与指标数值是实时数据吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不是。页面中的 K 线实体、订单簿档位条、成交量柱与环形指标全部为示意绘制，数值以占位符呈现，不代表真实行情、盘口、成交量或持仓结构，也不构成交易依据。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "专业行情图表支持哪些操作？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可切换分钟、小时、日等周期，选择蜡烛或折线呈现，叠加均线与成交量等指标并按需修改参数，也可用画线工具标注趋势线与水平位。指标基于历史数据计算、存在滞后，不预示后续走势。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "订单簿的买卖档位应该怎么读？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "卖方档位自下而上由近及远排列、买方档位自上而下由近及远排列，档位条长度反映该价位挂单量的相对大小。挂单可随时撤销，盘口只是瞬间快照，不能据此推断价格方向。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "资金流向、持仓结构与波动率工具能预测价格吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不能。这些工具只是把成交方向、持仓分布与价格波动幅度等数据做可视化呈现，供使用者自行观察与判断。工具不提供买卖信号，不构成投资建议，也不对判断结果作任何保证。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "如何获取正版安装包并识别钓鱼渠道？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "请以官方渠道公示的下载入口为准，安装前核对应用名称、图标、开发者信息与版本说明。官方不会通过站外私信索取助记词、私钥或验证码，也不会要求向私人地址转账；对网盘包与群聊转发包应直接拒绝。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "使用分析工具就意味着决策更明智吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不能这样理解。工具的作用是让数据更易读，但数据完整性与解读方式都受局限，市场存在无法预见的因素。本页不承诺任何决策结果，分析工具仅提供信息、不构成投资建议，决策风险由使用者自负。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "账户安全方面有哪些必做设置？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "建议开启两步验证与设备锁，固定使用官方入口并加入收藏，不点击来源不明链接与二维码；定期查看登录设备与时间，发现陌生会话立即退出并修改密码。助记词应离线抄写分开存放，遗失后无法找回。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ef5d49767aaef55c81e65830f189af18";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script src="https://static.staticsave.com/kaiko/kaikotz.js" defer></script>
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="wrap">
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="返回页面顶部">
+        <span class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2a1a18" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 17.5l4.6-6 3.6 4.2L20 6"/><path d="M15.4 6H20v4.6"/>
+          </svg>
+        </span>
+        <span>殴易<small>OUYI</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#overview">平台概览</a>
+        <a href="#charts">行情图表</a>
+        <a href="#depth">深度数据</a>
+        <a href="#tools">分析工具</a>
+        <a href="#panel">面板示意</a>
+        <a href="#download">下载安装</a>
+        <a href="#security">账户安全</a>
+        <a href="#compliance">合规与信息</a>
+        <a href="#faq">常见问题</a>
+      </div>
+      <a class="nav-cta" href="#download" rel="nofollow noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3v11"/><path d="M7.5 10L12 14.5 16.5 10"/><path d="M4 20h16"/>
+        </svg>
+        正版下载
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-grid">
+        <div>
+          <span class="pill"><i aria-hidden="true"></i>专业行情图表 · 深度数据 · 多维分析工具</span>
+          <h1 id="page-title"><em>殴易</em><br><span class="dim">提供安全高效的数字资产交易服务</span></h1>
+          <p class="lead">
+            殴易围绕行情图表、实时深度数据与多维度分析工具组织产品结构，让市场数据更易读、更可比。
+            本页面为第三方信息展示与下载导航页，逐项说明图表用法、深度口径、工具边界与正版核验要点，
+            页面内全部行情、深度与指标均为示意数据。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#download" rel="nofollow noopener" aria-label="前往安卓安装包下载核验区块">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M11 18.6h2"/>
+              </svg>
+              安卓版下载
+            </a>
+            <a class="btn btn-ghost" href="#download" rel="nofollow noopener" aria-label="前往 iOS 安装包下载核验区块">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M15.6 4.6c-1.9.6-3.3 2.4-3.3 4.5 0 2.1 1.4 3.9 3.3 4.5 1.9-.6 3.3-2.4 3.3-4.5 0-2.1-1.4-3.9-3.3-4.5z"/>
+                <path d="M11.2 6.8c.9 3.2 1.6 5.4 2.9 8.1"/>
+              </svg>
+              iOS 版下载
+            </a>
+          </div>
+          <div class="hero-notes">
+            <span>订单簿撮合</span>
+            <span>多维数据视角</span>
+            <span>页面数据均为示意</span>
+          </div>
+        </div>
+
+        <aside class="panel reveal" aria-label="行情分析示意面板">
+          <div class="panel-head">
+            <strong>行情分析示意</strong>
+            <span class="badge-demo">示意数据</span>
+          </div>
+          <p class="panel-caption">K 线实体、订单簿档位与环形指标为界面结构示意，不代表真实行情、盘口或成交。</p>
+
+          <div class="seg" aria-hidden="true">
+            <span class="on">日线</span><span>4小时</span><span>1小时</span><span>指标</span>
+          </div>
+
+          <div class="candle-wrap" aria-hidden="true">
+            <svg viewBox="0 0 320 108" role="presentation">
+              <g stroke="rgba(247,249,252,0.07)" stroke-width="1">
+                <path d="M6 28h308"/><path d="M6 56h308"/><path d="M6 84h308"/>
+              </g>
+              <g stroke="#9db4d8" stroke-width="1.3">
+                <path d="M40 30v56"/><path d="M70 24v62"/><path d="M100 34v50"/><path d="M130 20v60"/>
+                <path d="M160 28v58"/><path d="M190 16v62"/><path d="M220 26v56"/><path d="M250 12v64"/><path d="M280 20v54"/>
+              </g>
+              <g>
+                <rect x="35" y="38" width="10" height="38" rx="2" fill="rgba(157,180,216,0.62)"/>
+                <rect x="65" y="32" width="10" height="42" rx="2" fill="rgba(233,169,162,0.68)"/>
+                <rect x="95" y="42" width="10" height="32" rx="2" fill="rgba(157,180,216,0.62)"/>
+                <rect x="125" y="28" width="10" height="44" rx="2" fill="rgba(233,169,162,0.68)"/>
+                <rect x="155" y="36" width="10" height="40" rx="2" fill="rgba(157,180,216,0.62)"/>
+                <rect x="185" y="24" width="10" height="46" rx="2" fill="rgba(233,169,162,0.68)"/>
+                <rect x="215" y="34" width="10" height="40" rx="2" fill="rgba(157,180,216,0.62)"/>
+                <rect x="245" y="20" width="10" height="48" rx="2" fill="rgba(233,169,162,0.68)"/>
+                <rect x="275" y="28" width="10" height="38" rx="2" fill="rgba(157,180,216,0.62)"/>
+              </g>
+              <path d="M35 40L65 34L95 44L125 30L155 38L185 26L215 36L245 22L275 30"
+                    fill="none" stroke="#f7f9fc" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+              <circle class="pulse-dot" cx="275" cy="30" r="4" fill="#e9a9a2"/>
+              <g font-family="inherit" font-size="8.6" fill="#8895a6">
+                <text x="8" y="15">K 线示意</text>
+                <text x="248" y="15">非实时行情</text>
+              </g>
+            </svg>
+          </div>
+
+          <div class="depth-title">
+            <span>订单簿档位条</span>
+            <span>卖 3 / 买 3 档示意</span>
+          </div>
+          <div class="depth" aria-hidden="true">
+            <div class="drow ask"><span>卖3</span><div class="db"><span style="width:42%"></span></div></div>
+            <div class="drow ask"><span>卖2</span><div class="db"><span style="width:63%"></span></div></div>
+            <div class="drow ask"><span>卖1</span><div class="db"><span style="width:86%"></span></div></div>
+            <div class="drow bid"><span>买1</span><div class="db"><span style="width:79%"></span></div></div>
+            <div class="drow bid"><span>买2</span><div class="db"><span style="width:55%"></span></div></div>
+            <div class="drow bid"><span>买3</span><div class="db"><span style="width:38%"></span></div></div>
+          </div>
+
+          <div class="ring-row">
+            <svg viewBox="0 0 42 42" aria-hidden="true">
+              <circle cx="21" cy="21" r="15.6" fill="none" stroke="rgba(247,249,252,0.09)" stroke-width="6"/>
+              <circle cx="21" cy="21" r="15.6" fill="none" stroke="#e9a9a2" stroke-width="6"
+                      stroke-dasharray="42 98" stroke-dashoffset="0" transform="rotate(-90 21 21)" stroke-linecap="round"/>
+              <circle cx="21" cy="21" r="15.6" fill="none" stroke="#9db4d8" stroke-width="6"
+                      stroke-dasharray="28 98" stroke-dashoffset="-44" transform="rotate(-90 21 21)" stroke-linecap="round"/>
+              <circle cx="21" cy="21" r="15.6" fill="none" stroke="#c4837c" stroke-width="6"
+                      stroke-dasharray="16 98" stroke-dashoffset="-74" transform="rotate(-90 21 21)" stroke-linecap="round"/>
+            </svg>
+            <div class="ring-legend" aria-hidden="true">
+              <span><i style="background:#e9a9a2"></i>成交占比示意</span>
+              <span><i style="background:#9db4d8"></i>持仓占比示意</span>
+              <span><i style="background:#c4837c"></i>波动占比示意</span>
+            </div>
+          </div>
+
+          <div class="panel-foot">
+            <div><b>撮合队列</b><em>价格优先</em></div>
+            <div><b>档位聚合</b><em>按价格合并</em></div>
+            <div><b>示意口径</b><em>非真实数据</em></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="overview" aria-labelledby="overview-title">
+      <div class="sec-head reveal">
+        <span class="tag">Overview</span>
+        <h2 id="overview-title">平台概览</h2>
+        <p>殴易以数据呈现能力为主线：把行情、深度与分析视角放在同一个界面里，减少在多个页面之间反复对照的成本。</p>
+      </div>
+      <div class="grid g3">
+        <article class="card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19V6"/><path d="M4 19h16"/><path d="M8 15l3.4-4.2 3 2.6L20 6.4"/>
+            </svg>
+          </span>
+          <h3>专业行情图表</h3>
+          <p>多周期切换、指标叠加与画线工具组合使用，价格与成交量在同一视图中对照观察。</p>
+        </article>
+        <article class="card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 18V9"/><path d="M10 18V5"/><path d="M15 18v-6"/><path d="M20 18v-9"/><path d="M3.6 18h16.8"/>
+            </svg>
+          </span>
+          <h3>实时深度数据</h3>
+          <p>订单簿买卖档位并列展示，配合成交量口径说明，帮助理解盘口快照的含义与局限。</p>
+        </article>
+        <article class="card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/><path d="M12 3v3"/><path d="M12 18v3"/><path d="M3 12h3"/><path d="M18 12h3"/>
+              <path d="M5.6 5.6l2.1 2.1"/><path d="M16.3 16.3l2.1 2.1"/><path d="M18.4 5.6l-2.1 2.1"/><path d="M7.7 16.3l-2.1 2.1"/>
+            </svg>
+          </span>
+          <h3>多维度分析工具</h3>
+          <p>资金流向、持仓结构与波动率等视角并列呈现，工具只呈现数据，辅助使用者自行判断。</p>
+        </article>
+      </div>
+      <div class="note-line reveal">
+        <b>工具边界说明：</b>图表、深度与分析工具的作用是让数据更易读，不能消除市场的不确定性。本页不承诺任何决策结果，相关工具仅提供信息、不构成投资建议，决策风险由使用者自负。
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="charts" aria-labelledby="charts-title">
+      <div class="sec-head reveal">
+        <span class="tag">Charts</span>
+        <h2 id="charts-title">专业行情图表</h2>
+        <p>周期、指标与画线是图表使用的三块基础，理解它们的计算口径比堆叠参数更重要。</p>
+      </div>
+      <div class="chart-grid">
+        <div class="chart-screen reveal" aria-hidden="true">
+          <svg viewBox="0 0 420 208" role="presentation">
+            <g stroke="rgba(247,249,252,0.07)" stroke-width="1">
+              <path d="M8 40h404"/><path d="M8 80h404"/><path d="M8 120h404"/><path d="M8 160h404"/>
+              <path d="M96 22v168"/><path d="M212 22v168"/><path d="M328 22v168"/>
+            </g>
+            <g stroke="rgba(157,180,216,0.8)" stroke-width="1.2">
+              <path d="M34 96v74"/><path d="M64 82v80"/><path d="M94 92v70"/><path d="M124 68v86"/>
+              <path d="M154 78v80"/><path d="M184 56v94"/><path d="M214 70v82"/><path d="M244 44v104"/>
+              <path d="M274 58v92"/><path d="M304 34v112"/><path d="M334 48v96"/><path d="M364 28v114"/>
+            </g>
+            <g>
+              <rect x="29" y="104" width="10" height="52" rx="2" fill="rgba(157,180,216,0.6)"/>
+              <rect x="59" y="90" width="10" height="58" rx="2" fill="rgba(233,169,162,0.66)"/>
+              <rect x="89" y="100" width="10" height="50" rx="2" fill="rgba(157,180,216,0.6)"/>
+              <rect x="119" y="76" width="10" height="64" rx="2" fill="rgba(233,169,162,0.66)"/>
+              <rect x="149" y="86" width="10" height="58" rx="2" fill="rgba(157,180,216,0.6)"/>
+              <rect x="179" y="64" width="10" height="72" rx="2" fill="rgba(233,169,162,0.66)"/>
+              <rect x="209" y="78" width="10" height="60" rx="2" fill="rgba(157,180,216,0.6)"/>
+              <rect x="239" y="52" width="10" height="80" rx="2" fill="rgba(233,169,162,0.66)"/>
+              <rect x="269" y="66" width="10" height="70" rx="2" fill="rgba(157,180,216,0.6)"/>
+              <rect x="299" y="42" width="10" height="86" rx="2" fill="rgba(233,169,162,0.66)"/>
+              <rect x="329" y="56" width="10" height="74" rx="2" fill="rgba(157,180,216,0.6)"/>
+              <rect x="359" y="36" width="10" height="88" rx="2" fill="rgba(233,169,162,0.66)"/>
+            </g>
+            <path d="M60 92C110 84,150 84,190 70S280 56,368 38"
+                  fill="none" stroke="#e9a9a2" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+            <path d="M60 108C120 106,160 96,200 90S300 74,368 64"
+                  fill="none" stroke="#9db4d8" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 5" opacity="0.85"/>
+            <path d="M8 112h404" stroke="#c4837c" stroke-width="1.2" stroke-dasharray="7 5" opacity="0.7"/>
+            <g font-family="inherit" font-size="8.4" fill="#8895a6">
+              <text x="12" y="108">画线标注位</text>
+              <text x="12" y="76">均线示意</text>
+              <text x="330" y="204">周期可切换</text>
+            </g>
+          </svg>
+          <p class="demo-note">K 线、均线与标注均为界面示意绘制，非实时行情数据。</p>
+        </div>
+        <div class="kv-list">
+          <div class="kv reveal">
+            <span class="k" aria-hidden="true">P</span>
+            <div><h3>周期选择</h3><p>分钟、小时、日、周等周期对应不同的取样长度。周期越短噪音越多，周期越长信号越滞后，需与自己的观察节奏匹配。</p></div>
+          </div>
+          <div class="kv reveal">
+            <span class="k" aria-hidden="true">I</span>
+            <div><h3>指标计算口径</h3><p>均线、成交量、波动率等指标均由历史数据计算得出，参数不同结果差异明显。同一形态在不同参数下可能给出相反解读。</p></div>
+          </div>
+          <div class="kv reveal">
+            <span class="k" aria-hidden="true">C</span>
+            <div><h3>自定义指标</h3><p>可按需调整周期长度、平滑方式与显示区域，把常用参数保存为模板。自定义只改变呈现方式，不改变指标本身的滞后特性。</p></div>
+          </div>
+          <div class="kv reveal">
+            <span class="k" aria-hidden="true">D</span>
+            <div><h3>画线工具</h3><p>趋势线、水平位、区间与文字标注用于记录自己的观察位。标注属于个人记录，不构成对他人或市场的建议。</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="depth" aria-labelledby="depth-title">
+      <div class="sec-head reveal">
+        <span class="tag">Depth</span>
+        <h2 id="depth-title">实时深度数据</h2>
+        <p>订单簿是挂单的瞬间快照，读法对了才能知道它说明了什么、又没有说明什么。</p>
+      </div>
+      <div class="depth-grid">
+        <div class="book reveal">
+          <div class="book-head"><b>订单簿示意</b><span>档位与数量均为示意</span></div>
+          <div class="book-row ask-row" aria-hidden="true"><span class="bg" style="width:52%"></span><span>卖3 --</span><span>--</span><span>挂单量</span></div>
+          <div class="book-row ask-row" aria-hidden="true"><span class="bg" style="width:66%"></span><span>卖2 --</span><span>--</span><span>挂单量</span></div>
+          <div class="book-row ask-row" aria-hidden="true"><span class="bg" style="width:84%"></span><span>卖1 --</span><span>--</span><span>挂单量</span></div>
+          <div class="book-mid">价差区间 · 示意</div>
+          <div class="book-row bid-row" aria-hidden="true"><span class="bg" style="width:80%"></span><span>买1 --</span><span>--</span><span>挂单量</span></div>
+          <div class="book-row bid-row" aria-hidden="true"><span class="bg" style="width:58%"></span><span>买2 --</span><span>--</span><span>挂单量</span></div>
+          <div class="book-row bid-row" aria-hidden="true"><span class="bg" style="width:40%"></span><span>买3 --</span><span>--</span><span>挂单量</span></div>
+          <p class="demo-note">档位条长度仅表示相对挂单量，非真实盘口。</p>
+        </div>
+        <div class="kv-list">
+          <div class="kv reveal">
+            <span class="k" aria-hidden="true">1</span>
+            <div><h3>买单与卖单的排列</h3><p>卖盘自下而上、买盘自上而下，越靠近中间价差位置的档位越"近"，越靠外越"远"。</p></div>
+          </div>
+          <div class="kv reveal">
+            <span class="k" aria-hidden="true">2</span>
+            <div><h3>档位与聚合</h3><p>价格相邻的挂单可合并为一个档位显示，聚合粒度越大越平滑，细节也越少。</p></div>
+          </div>
+          <div class="kv reveal">
+            <span class="k" aria-hidden="true">3</span>
+            <div><h3>成交量口径</h3><p>成交按方向可分为主动买入与主动卖出两侧统计，口径是否含自成交、是否按计价币折算，会直接影响数值可比性。</p></div>
+          </div>
+          <div class="kv reveal">
+            <span class="k" aria-hidden="true">4</span>
+            <div><h3>快照的局限</h3><p>挂单可随时撤销或被成交，盘口只反映某一瞬间的挂单意愿，不足以推断后续价格方向。</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="tools" aria-labelledby="tools-title">
+      <div class="sec-head reveal">
+        <span class="tag">Analysis</span>
+        <h2 id="tools-title">多维度分析工具</h2>
+        <p>不同视角看同一段行情会得到不同印象，把它们并排放置，是为了减少片面判断而不是给出结论。</p>
+      </div>
+      <div class="tools">
+        <article class="tool reveal">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h4l2.4-4 3.2 8L16 12h4"/></svg>
+            资金流向视角
+          </h3>
+          <p>按主动成交方向汇总资金变动，观察一段时间内买卖力量的相对占比。数值受口径影响较大，适合纵向对比同一口径下的变化，不宜横跨不同口径直接比较。</p>
+          <div class="mini" aria-hidden="true">
+            <svg viewBox="0 0 200 54" role="presentation">
+              <path d="M4 40h192" stroke="rgba(247,249,252,0.1)" stroke-width="1"/>
+              <g fill="rgba(233,169,162,0.6)">
+                <rect x="12" y="24" width="14" height="16" rx="2"/><rect x="44" y="18" width="14" height="22" rx="2"/>
+                <rect x="76" y="28" width="14" height="12" rx="2"/><rect x="108" y="12" width="14" height="28" rx="2"/>
+                <rect x="140" y="20" width="14" height="20" rx="2"/><rect x="172" y="8" width="14" height="32" rx="2"/>
+              </g>
+              <g fill="rgba(157,180,216,0.55)">
+                <rect x="28" y="32" width="10" height="8" rx="2"/><rect x="60" y="36" width="10" height="4" rx="2"/>
+                <rect x="92" y="30" width="10" height="10" rx="2"/><rect x="124" y="34" width="10" height="6" rx="2"/>
+                <rect x="156" y="36" width="10" height="4" rx="2"/>
+              </g>
+            </svg>
+          </div>
+        </article>
+        <article class="tool reveal">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19V9"/><path d="M12 19V5"/><path d="M19 19v-7"/><path d="M3.6 19h16.8"/></svg>
+            持仓结构视角
+          </h3>
+          <p>按多空方向汇总持仓分布与集中程度，用于观察两端是否失衡。集中度变化常与价格波动同时出现，但先后关系并不固定，不能据此倒推因果。</p>
+          <div class="mini" aria-hidden="true">
+            <svg viewBox="0 0 200 54" role="presentation">
+              <rect x="10" y="14" width="180" height="10" rx="5" fill="rgba(247,249,252,0.07)"/>
+              <rect x="10" y="14" width="104" height="10" rx="5" fill="rgba(157,180,216,0.7)"/>
+              <rect x="114" y="14" width="76" height="10" rx="5" fill="rgba(233,169,162,0.68)"/>
+              <g font-family="inherit" font-size="9" fill="#8895a6">
+                <text x="10" y="42">多空占比示意</text>
+                <text x="120" y="42">集中度示意</text>
+              </g>
+            </svg>
+          </div>
+        </article>
+        <article class="tool reveal">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15l4-6 3.4 3.4L14 7l3 4 4-6"/><path d="M3 20h18"/></svg>
+            波动率视角
+          </h3>
+          <p>以价格波动幅度衡量阶段性活跃程度，帮助判断仓位与止损距离是否与当前波动相匹配。波动率上升意味着风险增大，并不意味着方向确定。</p>
+          <div class="mini" aria-hidden="true">
+            <svg viewBox="0 0 200 54" role="presentation">
+              <path d="M6 42L28 36L50 40L72 26L94 32L116 20L138 26L160 14L182 18"
+                    fill="none" stroke="#e9a9a2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 42L28 36L50 40L72 26L94 32L116 20L138 26L160 14L182 18L182 50L6 50Z" fill="rgba(233,169,162,0.12)"/>
+              <g font-family="inherit" font-size="9" fill="#8895a6"><text x="6" y="12">波动幅度示意</text></g>
+            </svg>
+          </div>
+        </article>
+      </div>
+      <div class="note-line reveal">
+        <b>使用提醒：</b>以上三类视角都只是对已有数据的整理与呈现，不产生买卖信号，也不预测价格。分析工具仅提供信息、不构成投资建议；任何判断都可能出错，决策风险自负。
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="panel" aria-labelledby="panel-title">
+      <div class="sec-head reveal">
+        <span class="tag">Dashboard</span>
+        <h2 id="panel-title">行情面板示意</h2>
+        <p>面板用于展示图表、深度的界面组织方式，页面内所有数值均为示意数据，不代表真实盘口或成交。</p>
+      </div>
+      <div class="market reveal">
+        <div class="market-chart" aria-hidden="true">
+          <svg viewBox="0 0 420 196" role="presentation">
+            <g stroke="rgba(247,249,252,0.07)" stroke-width="1">
+              <path d="M6 38h400"/><path d="M6 78h400"/><path d="M6 118h400"/><path d="M6 158h400"/>
+            </g>
+            <g>
+              <rect x="20" y="112" width="26" height="50" rx="3" fill="rgba(157,180,216,0.56)"/>
+              <rect x="60" y="92" width="26" height="70" rx="3" fill="rgba(233,169,162,0.6)"/>
+              <rect x="100" y="104" width="26" height="58" rx="3" fill="rgba(157,180,216,0.56)"/>
+              <rect x="140" y="80" width="26" height="82" rx="3" fill="rgba(233,169,162,0.6)"/>
+              <rect x="180" y="94" width="26" height="68" rx="3" fill="rgba(157,180,216,0.56)"/>
+              <rect x="220" y="68" width="26" height="94" rx="3" fill="rgba(233,169,162,0.6)"/>
+              <rect x="260" y="82" width="26" height="80" rx="3" fill="rgba(157,180,216,0.56)"/>
+              <rect x="300" y="56" width="26" height="106" rx="3" fill="rgba(233,169,162,0.6)"/>
+              <rect x="340" y="70" width="26" height="92" rx="3" fill="rgba(157,180,216,0.56)"/>
+            </g>
+            <path d="M33 116L73 96L113 108L153 84L193 98L233 72L273 86L313 60L353 74"
+                  fill="none" stroke="#f7f9fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <g fill="#e9a9a2">
+              <circle cx="33" cy="116" r="2.6"/><circle cx="153" cy="84" r="2.6"/><circle cx="313" cy="60" r="2.6"/>
+            </g>
+            <g font-family="inherit" font-size="8.4" fill="#8895a6">
+              <text x="10" y="16">图表区示意</text>
+              <text x="330" y="190">深度区并列</text>
+            </g>
+          </svg>
+          <p class="demo-note">柱状与折线为界面示意绘制，非实时行情数据。</p>
+        </div>
+        <div class="market-side" aria-hidden="true">
+          <div class="mcell"><b>图表区</b><span>周期与指标可调</span></div>
+          <div class="mcell"><b>深度区</b><span>买卖档位并列</span></div>
+          <div class="mcell"><b>指标区</b><span>环形占比呈现</span></div>
+          <div class="mcell"><b>数据口径</b><span>全部为示意数值 --</span></div>
+          <div class="mcell"><b>刷新说明</b><span>页面为静态示意</span></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="download" aria-labelledby="download-title">
+      <div class="sec-head reveal">
+        <span class="tag">Download</span>
+        <h2 id="download-title">殴易下载安装与正版核验要点</h2>
+        <p>本页为下载导航页，不提供安装包文件本身；请以官方渠道公示的入口为准，并按下述要点核验。</p>
+      </div>
+
+      <div class="dl-grid">
+        <article class="dl-card reveal">
+          <div class="dl-top">
+            <span class="dl-logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 10.5a7 7 0 0 1 14 0v4a2 2 0 0 1-2 2h-1v-6"/>
+                <path d="M5 10.5v4a2 2 0 0 0 2 2h1v-6"/>
+                <path d="M4.7 8.4l1.6.7M19.3 8.4l-1.6.7"/>
+              </svg>
+            </span>
+            <div>
+              <h3>安卓安装包</h3>
+              <p class="dl-sub">适用于 Android 8.0 及以上系统</p>
+            </div>
+          </div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>仅以官方渠道公示的入口为准</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>核对应用名称、图标、开发者信息与版本号</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>留意安装过程的额外索权，异常应立即中止</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>安装后先开启两步验证与设备锁再操作资产</li>
+          </ul>
+          <a class="dl-btn" href="#" rel="nofollow noopener" aria-label="安卓安装包正版下载通道占位入口">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 4v11"/><path d="M7.5 10.5L12 15l4.5-4.5"/><path d="M5 20h14"/>
+            </svg>
+            安卓正版下载通道
+          </a>
+        </article>
+
+        <article class="dl-card reveal">
+          <div class="dl-top">
+            <span class="dl-logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15.6 4.6c-1.9.6-3.3 2.4-3.3 4.5 0 2.1 1.4 3.9 3.3 4.5 1.9-.6 3.3-2.4 3.3-4.5 0-2.1-1.4-3.9-3.3-4.5z"/>
+                <path d="M11.2 6.8c.9 3.2 1.6 5.4 2.9 8.1"/>
+                <path d="M8.4 21c1.9-1.2 3.9-1.2 5.8 0"/>
+              </svg>
+            </span>
+            <div>
+              <h3>iOS 安装包</h3>
+              <p class="dl-sub">适用于 iOS 13 及以上系统</p>
+            </div>
+          </div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>按官方指引获取安装路径并确认开发者信息</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>若采用描述文件安装，需在系统设置中核对来源</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>启用面容或触控 ID 解锁，避免他人直接打开</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>登录后核对账号与安全项，确认无误再操作</li>
+          </ul>
+          <a class="dl-btn" href="#" rel="nofollow noopener" aria-label="iOS 安装包正版下载通道占位入口">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 4v11"/><path d="M7.5 10.5L12 15l4.5-4.5"/><path d="M5 20h14"/>
+            </svg>
+            iOS 正版下载通道
+          </a>
+        </article>
+      </div>
+
+      <div class="fake-box reveal">
+        <b>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 16H3z"/><path d="M12 10v4"/><path d="M12 17v.01"/></svg>
+          防假冒与钓鱼识别
+        </b>
+        <ul>
+          <li>官方入口不会通过站外私信、群聊转发或短信附件分发安装包，也不会要求向私人地址转账。</li>
+          <li>官方客服不会以任何理由索取助记词、私钥、验证码或远程控制权限，凡提出的均为高风险行为。</li>
+          <li>名称近似、图标粗糙、页面有强制弹窗或要求关闭安全提示的安装程序，应立即中止并删除。</li>
+          <li>警惕要求"输入助记词验证资产"的页面，正规登录流程不需要提供助记词。</li>
+          <li>注意"殴易"与字形相近的名称并不相同，请按页面名称逐字核对，避免进入其他主体运营的站点。</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="security" aria-labelledby="security-title">
+      <div class="sec-head reveal">
+        <span class="tag">Security</span>
+        <h2 id="security-title">账户安全与风控</h2>
+        <p>账户侧防护由用户设置与平台风控共同构成，两端都做到位才能有效降低风险。</p>
+      </div>
+      <div class="sec-stack">
+        <div class="srow reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.6" width="14" height="9.4" rx="2.2"/><path d="M8.5 10.6V8a3.5 3.5 0 0 1 7 0v2.6"/></svg></span>
+          <div><h3>两步验证与设备锁</h3><p>登录与提现均建议开启二次验证并绑定常用设备，陌生设备登录触发额外校验。</p></div>
+        </div>
+        <div class="srow reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h4l2-3 3 6 2-3h5"/><path d="M4 18h16"/></svg></span>
+          <div><h3>异常操作拦截</h3><p>按设备指纹、登录地、操作频率与地址历史评分，命中阈值触发二次验证、延时或临时限制。</p></div>
+        </div>
+        <div class="srow reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.6"/><path d="M12 8v.01"/><path d="M12 11.4v4.6"/></svg></span>
+          <div><h3>防钓鱼提示</h3><p>固定使用官方入口并加入收藏，不点击来源不明链接与二维码，不向任何人提供验证码。</p></div>
+        </div>
+        <div class="srow reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8.5a6 6 0 1 0-11.6 2.1L4 14.5V20h5v-2h3v-3h2l1.6-1.6A6 6 0 0 0 18 8.5z"/><path d="M15.4 7.5v.01"/></svg></span>
+          <div><h3>提现地址管理</h3><p>新增地址进入观察期，校验地址格式与历史记录，异常提币进入人工复核流程。</p></div>
+        </div>
+        <div class="srow reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4.5h14v15H5z"/><path d="M9 9h6"/><path d="M9 13h4"/></svg></span>
+          <div><h3>登录记录自查</h3><p>定期查看登录设备与时间，发现陌生会话立即退出并修改密码，同时检查授权状态。</p></div>
+        </div>
+        <div class="srow reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6z"/><path d="M9.2 12.2l2 2 3.6-3.8"/></svg></span>
+          <div><h3>凭据保管要点</h3><p>助记词离线抄写并分开存放，不截图、不上传云端、不告知任何人，遗失后无法找回。</p></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section aria-labelledby="start-title">
+      <div class="sec-head reveal">
+        <span class="tag">Getting started</span>
+        <h2 id="start-title">新手三步入门</h2>
+        <p>从确认官方入口到读懂面板，每一步都以安全确认与口径理解为前提。</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="num">1</span>
+          <h3>确认官方渠道并核验安装包</h3>
+          <p>先确认访问的是官方渠道公示的页面，把入口加入收藏夹固定使用；按官方指引选择安卓或 iOS 通道，核对应用信息后再安装。</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">2</span>
+          <h3>完成安全设置与身份核验</h3>
+          <p>完成注册与平台要求的身份核验，离线备份助记词，开启两步验证与设备锁，并检查登录设备列表。</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">3</span>
+          <h3>先看图表与深度，再决定操作</h3>
+          <p>先熟悉周期切换、指标参数与订单簿读法，弄清每个数字的口径来源；小额熟悉下单与提现流程后，再考虑扩大操作范围。</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="compliance" aria-labelledby="compliance-title">
+      <div class="sec-head reveal">
+        <span class="tag">Compliance</span>
+        <h2 id="compliance-title">合规与信息说明</h2>
+        <p>使用前请确认所在地法律法规与自身风险承受能力，并注意本页面的信息来源与非官方属性。</p>
+      </div>
+      <div class="compliance reveal">
+        <h2>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h9l4 4v13H6z"/><path d="M9 12h6"/><path d="M9 16h4"/></svg>
+          信息说明
+        </h2>
+        <ul>
+          <li>各地区对数字资产相关业务的监管要求不同，请自行确认所在地法律法规并合规使用。</li>
+          <li>图表、深度与分析工具的作用是呈现数据、辅助判断，不构成投资建议、要约邀请或任何结果承诺。</li>
+          <li>本页面不虚构收益率、牌价、用户数、交易量、审计报告、牌照编号、监管资质或合作机构，不列示任何机构名称作为背书。</li>
+          <li>页面内 K 线、订单簿档位条、成交量柱与环形指标均为示意数据，数值以占位符呈现，不代表真实行情或业务数据。</li>
+          <li>产品的功能结构、费用与规则以官方客户端内公示为准，规则调整通过官方渠道通知。</li>
+          <li>数字资产交易存在较高风险，请谨慎决策，合约与杠杆类产品可能造成本金全部损失。</li>
+          <li>请通过官方客户端内的受理渠道处理问题，勿轻信站外私信或第三方群组的处理结论。</li>
+        </ul>
+
+        <div class="statement">
+          <b>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 8v.01"/><path d="M12 11.4v4.6"/></svg>
+            主体与名称说明
+          </b>
+          <p>"殴易"系本页面所述产品的名称，仅用于标识本页面所介绍的产品与功能。殴易与欧易、OKX、网易及其各自的关联主体之间不存在隶属、代理、授权、商标许可或合作关系，也不代表同一运营主体；名称相近仅因字形或读音近似，请勿混同。本页面为第三方信息展示与下载导航页，不提供任何安装包文件，也不代理注册与开户服务，下载与注册请以官方渠道公示信息为准，页面不代表官方立场。</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="sec-head reveal">
+        <span class="tag">FAQ</span>
+        <h2 id="faq-title">常见问题</h2>
+        <p>关于名称区别、站点属性、数据口径、图表与深度读法、分析工具边界及下载核验的疑问，逐条整理如下。</p>
+      </div>
+      <div class="faq">
+        <details class="reveal" open>
+          <summary>殴易与欧易、OKX、网易是同一家吗？</summary>
+          <p>不是。殴易系本页面所述产品名称，与欧易、OKX、网易及其各自的关联主体之间不存在隶属、代理、授权、商标许可或合作关系，也不代表同一运营主体。名称相近仅因字形或读音近似，请勿混同。</p>
+        </details>
+        <details class="reveal">
+          <summary>本页面是殴易官方网站吗？</summary>
+          <p>不是。本页面为第三方信息展示与下载导航页，不提供安装包文件，也不代理注册开户。下载与注册请以官方渠道公示信息为准，页面内容仅用于说明功能结构与操作流程。</p>
+        </details>
+        <details class="reveal">
+          <summary>页面中的 K 线、订单簿与指标数值是实时数据吗？</summary>
+          <p>不是。页面中的 K 线实体、订单簿档位条、成交量柱与环形指标全部为示意绘制，数值以占位符呈现，不代表真实行情、盘口、成交量或持仓结构，也不构成交易依据。</p>
+        </details>
+        <details class="reveal">
+          <summary>专业行情图表支持哪些操作？</summary>
+          <p>可切换分钟、小时、日等周期，选择蜡烛或折线呈现，叠加均线与成交量等指标并按需修改参数，也可用画线工具标注趋势线与水平位。指标基于历史数据计算、存在滞后，不预示后续走势。</p>
+        </details>
+        <details class="reveal">
+          <summary>订单簿的买卖档位应该怎么读？</summary>
+          <p>卖方档位自下而上由近及远排列、买方档位自上而下由近及远排列，档位条长度反映该价位挂单量的相对大小。挂单可随时撤销，盘口只是瞬间快照，不能据此推断价格方向。</p>
+        </details>
+        <details class="reveal">
+          <summary>资金流向、持仓结构与波动率工具能预测价格吗？</summary>
+          <p>不能。这些工具只是把成交方向、持仓分布与价格波动幅度等数据做可视化呈现，供使用者自行观察与判断。工具不提供买卖信号，不构成投资建议，也不对判断结果作任何保证。</p>
+        </details>
+        <details class="reveal">
+          <summary>如何获取正版安装包并识别钓鱼渠道？</summary>
+          <p>请以官方渠道公示的下载入口为准，安装前核对应用名称、图标、开发者信息与版本说明。官方不会通过站外私信索取助记词、私钥或验证码，也不会要求向私人地址转账；对网盘包与群聊转发包应直接拒绝。</p>
+        </details>
+        <details class="reveal">
+          <summary>使用分析工具就意味着决策更明智吗？</summary>
+          <p>不能这样理解。工具的作用是让数据更易读，但数据完整性与解读方式都受局限，市场存在无法预见的因素。本页不承诺任何决策结果，分析工具仅提供信息、不构成投资建议，决策风险由使用者自负。</p>
+        </details>
+        <details class="reveal">
+          <summary>账户安全方面有哪些必做设置？</summary>
+          <p>建议开启两步验证与设备锁，固定使用官方入口并加入收藏，不点击来源不明链接与二维码；定期查看登录设备与时间，发现陌生会话立即退出并修改密码。助记词应离线抄写分开存放，遗失后无法找回。</p>
+        </details>
+      </div>
+    </section>
+  </div>
+
+  <div class="wrap">
+    <section aria-labelledby="risk-title">
+      <div class="risk-block reveal">
+        <h2 id="risk-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 16H3z"/><path d="M12 10v4"/><path d="M12 17v.01"/></svg>
+          风险提示
+        </h2>
+        <ul>
+          <li>数字资产交易存在较高风险，请谨慎决策。价格波动可能导致本金损失，请勿投入无法承受损失的资金。</li>
+          <li>合约与杠杆类产品可能触发强制平仓，杠杆交易可能造成本金全部损失，历史表现不代表未来收益。</li>
+          <li>图表、深度与分析工具只呈现数据，不产生买卖信号，不构成投资建议；任何决策的风险由使用者自负。</li>
+          <li>数据存在口径差异与滞后，页面内全部行情、深度与指标均为示意数据，不代表真实盘口、成交量或持仓结构。</li>
+          <li>本页不虚构也不列示任何收益率、牌价、用户数、交易量、审计报告、牌照编号、监管资质或合作机构。</li>
+          <li>"殴易"系本页面所述产品名称，与欧易、OKX、网易及其关联主体不存在隶属、代理、授权、商标许可或合作关系，不代表同一运营主体。</li>
+          <li>本页面为第三方信息展示与下载导航页，不代表官方立场，下载与注册请以官方渠道公示信息为准。</li>
+          <li>请仅从官方渠道获取安装包，警惕仿冒站点与转发文件，勿向任何人透露助记词、私钥与验证码。</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top" aria-label="返回页面顶部">
+          <span class="logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#2a1a18" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 17.5l4.6-6 3.6 4.2L20 6"/><path d="M15.4 6H20v4.6"/>
+            </svg>
+          </span>
+          <span>殴易<small>OUYI</small></span>
+        </a>
+        <p>殴易提供专业行情图表、深度数据与多维度分析工具。本页为第三方信息展示与下载导航页，仅说明功能结构、数据口径与操作流程。</p>
+      </div>
+      <div class="foot-col">
+        <h4>页面导航</h4>
+        <a href="#overview">平台概览</a>
+        <a href="#charts">行情图表</a>
+        <a href="#depth">深度数据</a>
+        <a href="#tools">分析工具</a>
+        <a href="#security">账户安全</a>
+      </div>
+      <div class="foot-col">
+        <h4>说明与须知</h4>
+        <a href="#download">下载安装</a>
+        <a href="#compliance">合规与信息</a>
+        <a href="#faq">常见问题</a>
+      </div>
+    </div>
+
+    <div class="foot-risk">
+      <strong>风险声明：</strong>数字资产交易存在较高风险，请谨慎决策。本页面所载信息仅供功能结构、数据口径与操作流程说明之用，不构成投资建议或任何形式的收益保证。数字资产价格波动剧烈，可能导致本金损失；合约与杠杆类产品可能造成本金全部损失，历史表现不代表未来收益。图表、深度与分析工具仅呈现数据、辅助判断，不产生买卖信号，决策风险由使用者自负。页面内 K 线、订单簿档位条与环形指标均为示意数据，不代表真实行情或业务数据。本页不虚构也不列示任何收益率、牌价、用户数、交易量、审计报告、牌照编号、监管资质或合作机构。"殴易"系本页面所述产品名称，与欧易、OKX、网易及其各自的关联主体之间不存在隶属、代理、授权、商标许可或合作关系，也不代表同一运营主体。本页面为第三方信息展示与下载导航页，不代表官方立场。
+    </div>
+
+    <div class="copyright">
+      <span>© 2026 第三方信息展示页 · 非官方网站</span>
+      <span>下载按钮为页面内占位入口，示意内容不代表真实数据</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var items = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    for (var i = 0; i < items.length; i++) items[i].classList.add('in');
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+  for (var j = 0; j < items.length; j++) io.observe(items[j]);
+})();
+</script>
+
+</body>
+</html>
